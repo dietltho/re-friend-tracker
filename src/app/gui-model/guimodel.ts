@@ -179,12 +179,20 @@ export class GuiModel {
                             "color": "yellow",
                             "page": "locationspage",
                         },
-                        { "type": "button",
+                        {
+                            "type": "button",
                             "name": "Groups",
                             "icon": "fa-folder",
                             "color": "magenta",
                             "page": "groupspage",
                         },
+                        {
+                            "type": "button",
+                            "name": "Activity",
+                            "icon": "fa-running",
+                            "color": "carrot",
+                            "page": "activitypage",
+                        }
                     ]
                 },
                 {
