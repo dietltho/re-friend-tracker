@@ -244,7 +244,7 @@ export class GuiModel {
                             "icon": "fa-user",
                             "color": "blue",
                             "search": true,
-                            "url": "/friend/:friendkey/activity",
+                            "url": "/friend",
                             "page": "friendactivitypage"
                         }
                     ]
