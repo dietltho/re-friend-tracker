@@ -208,18 +208,19 @@ export class GuiModel {
                         },
                     ]
                 },
-                { "id": "groupspage",
+                {
+                    "id": "groupspage",
                     "elementList": [
                         {
                             "type": "backbutton",
                         },
                         {
-                        "type": "newButton",
-                        "name": "NewGroup",
-                        "icon": "fa-folder",
-                        "color": "lime",
-                        "form": {
-                            "form": "GroupForm"
+                            "type": "newButton",
+                            "name": "NewGroup",
+                            "icon": "fa-folder",
+                            "color": "lime",
+                            "form": {
+                                "form": "GroupForm"
                             }
                         }
                     ]
