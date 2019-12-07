@@ -248,6 +248,16 @@ export class GuiModel {
                             "form": {
                                 "form": "GroupForm"
                             }
+                        },
+                        {
+                            "type": "list",
+                            "icon": "fa-weixin",
+                            "color": "wisteria",
+                            "search": true,
+                            "url": "/group",
+                            "form": {
+                                "form": "GroupForm"
+                            }
                         }
                     ]
                 }
