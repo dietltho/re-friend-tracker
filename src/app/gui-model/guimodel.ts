@@ -146,6 +146,14 @@ export class GuiModel {
                             "width": 2
                         },
                         {
+                            "id":   "location",
+                            "type": "autocomplete",
+                            "name": "Location",
+                            "url": "/location",
+                            "form": "LocationForm",
+                            "width": 2
+                        },
+                        {
                             "type": "deleteButton",
                             "name": "Delete"
                         },
