@@ -136,13 +136,6 @@ export class GuiModel {
                     "url": "/friend/:friendKey/activity",
                     "formFieldList": [
                         {
-                            "id": "activityname",
-                            "type": "text",
-                            "name": "ActivityName",
-                            "width": 2,
-                            "required": true
-                        },
-                        {
                             "id": "date",
                             "type": "date",
                             "name": "Date",
