@@ -148,7 +148,7 @@ export class GuiModel {
                         { "type": "button",
                             "name": "Groups",
                             "icon": "fa-folder",
-                            "color": "wisteria",
+                            "color": "magenta",
                             "page": "groupspage",
                         },
                     ]
