@@ -143,6 +143,12 @@ export class GuiModel {
                             "required": true
                         },
                         {
+                            "id": "date",
+                            "type": "date",
+                            "name": "Date",
+                            "width": 2
+                        },
+                        {
                             "id":   "activity",
                             "type": "autocomplete",
                             "name": "Activity",
@@ -159,6 +165,14 @@ export class GuiModel {
                             "url": "/location",
                             "form": "LocationForm",
                             "width": 2
+                        },
+                        {
+                            "id": "comment",
+                            "type": "text",
+                            "name": "Comments",
+                            "width": 2,
+                            "height": 4,
+                            "maxLength": 5000,
                         },
                         {
                             "type": "deleteButton",
