@@ -141,7 +141,7 @@ export class GuiModel {
                         {
                             "type": "button",
                             "name": "Location",
-                            "icon": "fa-search-location",
+                            "icon": "fa-location",
                             "color": "yellow",
                             "page": "locationspage",
                         },
