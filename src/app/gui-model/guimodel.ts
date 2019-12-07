@@ -244,11 +244,9 @@ export class GuiModel {
                             "icon": "fa-user",
                             "color": "blue",
                             "search": true,
-                            "url": "/friend",
-                            "form": {
-                                "form": "FriendForm"
-                            }
-                        },
+                            "url": "/friend/:friendkey/activity",
+                            "page": "friendactivitypage"
+                        }
                     ]
                 },
                 {
@@ -332,7 +330,35 @@ export class GuiModel {
                             }
                         }
                     ]
-                }
+                },
+                {
+                    "id": "friendactivitypage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "NewActivity",
+                            "icon": "fa-running",
+                            "color": "green",
+                            "width": 2,
+                            "form": {
+                                "form": "AddActivityForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "icon": "fa-home",
+                            "color": "blue",
+                            "search": true,
+                            "url": "/friend/:friendKey/activity",
+                            "form": {
+                                "form": "AddActivityForm"
+                            }
+                        },
+                    ]
+                },
             ]
         }
     };
