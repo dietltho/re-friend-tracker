@@ -442,7 +442,7 @@ export class GuiModel {
                             "icon": "fa-home",
                             "color": "blue",
                             "search": true,
-                            "url": "/friend/:friendKey/activity",
+                            "url": "/friend",
                             "form": {
                                 "form": "AddAct4PersonForm"
                             }
