@@ -352,9 +352,7 @@ export class GuiModel {
                             "color": "blue",
                             "search": true,
                             "url": "/location",
-                            "form": {
-                                "form": "LocationForm"
-                            }
+                            "page": "locationactivitypage"
                         },
                     ]
                 },
@@ -445,6 +443,43 @@ export class GuiModel {
                             "url": "/friend/:friendKey/activity",
                             "form": {
                                 "form": "AddAct4PersonForm"
+                            }
+                        },
+                    ]
+                },
+                {
+                    "id": "locationactivitypage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "button",
+                            "name": "Edit Location",
+                            "icon": "fa-location",
+                            "color": "green",
+                            "form": {
+                                "form": "LocationForm"
+                            }
+                        },
+                        {
+                            "type": "newButton",
+                            "name": "NewLocation",
+                            "icon": "fa-location",
+                            "color": "green",
+                            "width": 2,
+                            "form": {
+                                "form": "AddLoc4PersonForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "icon": "fa-home",
+                            "color": "blue",
+                            "search": true,
+                            "url": "/location/:locationkey/activity",
+                            "form": {
+                                "form": "AddLoc4PersonForm"
                             }
                         },
                     ]
