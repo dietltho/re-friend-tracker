@@ -419,7 +419,7 @@ export class GuiModel {
                             "type": "backbutton",
                         },
                         {
-                            "type": "newButton",
+                            "type": "button",
                             "name": "Edit Friend",
                             "icon": "fa-user",
                             "color": "green",
@@ -442,7 +442,7 @@ export class GuiModel {
                             "icon": "fa-home",
                             "color": "blue",
                             "search": true,
-                            "url": "/friend",
+                            "url": "/friend/:friendKey/activity",
                             "form": {
                                 "form": "AddAct4PersonForm"
                             }
