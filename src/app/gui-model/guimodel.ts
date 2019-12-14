@@ -16,14 +16,14 @@ export class GuiModel {
                         {
                             "id": "familyName",
                             "type": "text",
-                            "name": "FamilyName",
+                            "name": "Family Name",
                             "width": 1,
                             "required": true
                         },
                         {
                             "id": "firstName",
                             "type": "text",
-                            "name": "FirstName",
+                            "name": "First Name",
                             "width": 1,
                             "required": true
                         },
@@ -86,7 +86,7 @@ export class GuiModel {
                         {
                             "id": "name",
                             "type": "text",
-                            "name": "LocationName",
+                            "name": "Location Name",
                             "width": 2,
                             "required": true
                         },
@@ -121,6 +121,13 @@ export class GuiModel {
                             "id": "name",
                             "type": "text",
                             "name": "GroupName",
+                            "width": 2,
+                            "required": true
+                        },
+                        {
+                            "id": "creationdate",
+                            "type": "date",
+                            "name": "Creation Date",
                             "width": 2,
                             "required": true
                         },
