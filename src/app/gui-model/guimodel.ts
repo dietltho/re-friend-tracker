@@ -159,20 +159,18 @@ export class GuiModel {
                     "url": "/activity",
                     "formFieldList": [
                         {
+                            "id": "name",
+                            "type": "text",
+                            "name": "Name",
+                            "width": 2,
+                            "required": true
+                        },
+                        {
                             "id": "date",
                             "type": "date",
                             "name": "Date",
-                            "width": 2
-                        },
-                        {
-                            "id":   "activity",
-                            "type": "autocomplete",
-                            "name": "Activity",
-                            "url": "/activity",
-                            "defaultKey": "activityKey",
-                            "readonly": true,
-                            "form": "ActivityForm",
-                            "width": 2
+                            "width": 2,
+                            "required": true
                         },
                         {
                             "id":   "location",
@@ -206,57 +204,6 @@ export class GuiModel {
                 },
                 {
                     "id": "AddActivityForm",
-                    "title": "Activity",
-                    "url": "/friend/:friendKey/activity",
-                    "formFieldList": [
-                        {
-                            "id": "date",
-                            "type": "date",
-                            "name": "Date",
-                            "width": 2
-                        },
-                        {
-                            "id":   "activity",
-                            "type": "autocomplete",
-                            "name": "Activity",
-                            "url": "/activity",
-                            "defaultKey": "activityKey",
-                            "readonly": true,
-                            "form": "ActivityForm",
-                            "width": 2
-                        },
-                        {
-                            "id":   "location",
-                            "type": "autocomplete",
-                            "name": "Location",
-                            "url": "/location",
-                            "form": "LocationForm",
-                            "width": 2
-                        },
-                        {
-                            "id": "comment",
-                            "type": "text",
-                            "name": "Comments",
-                            "width": 2,
-                            "height": 4,
-                            "maxLength": 5000,
-                        },
-                        {
-                            "type": "deleteButton",
-                            "name": "Delete"
-                        },
-                        {
-                            "type": "cancelButton",
-                            "name": "Cancel"
-                        },
-                        {
-                            "type": "okButton",
-                            "name": "Ok"
-                        }
-                    ]
-                },
-                {
-                    "id": "AddAct4PersonForm",
                     "title": "Activity",
                     "url": "/friend/:friendKey/activity",
                     "formFieldList": [
@@ -313,7 +260,7 @@ export class GuiModel {
                         },
                         {
                             "type": "button",
-                            "name": "Activity",
+                            "name": "Activities",
                             "icon": "fa-running",
                             "color": "carrot",
                             "page": "activitypage",
@@ -353,7 +300,7 @@ export class GuiModel {
                         },
                         {
                             "type": "newButton",
-                            "name": "NewLocation",
+                            "name": "New Location",
                             "icon": "fa-home",
                             "color": "green",
                             "width": 2,
@@ -442,12 +389,12 @@ export class GuiModel {
                         },
                         {
                             "type": "newButton",
-                            "name": "NewActivity",
+                            "name": "Add Activity",
                             "icon": "fa-running",
                             "color": "green",
                             "width": 2,
                             "form": {
-                                "form": "AddAct4PersonForm"
+                                "form": "AddActivityForm"
                             }
                         },
                         {
@@ -457,7 +404,7 @@ export class GuiModel {
                             "search": true,
                             "url": "/friend/:friendKey/activity",
                             "form": {
-                                "form": "AddAct4PersonForm"
+                                "form": "AddActivityForm"
                             }
                         },
                     ]
@@ -478,24 +425,11 @@ export class GuiModel {
                             }
                         },
                         {
-                            "type": "newButton",
-                            "name": "NewLocation",
-                            "icon": "fa-location",
-                            "color": "green",
-                            "width": 2,
-                            "form": {
-                                "form": "AddLoc4PersonForm"
-                            }
-                        },
-                        {
                             "type": "list",
                             "icon": "fa-home",
                             "color": "blue",
                             "search": true,
-                            "url": "/location/:locationkey/activity",
-                            "form": {
-                                "form": "AddLoc4PersonForm"
-                            }
+                            "url": "/location/:locationkey/activity"
                         },
                     ]
                 },
