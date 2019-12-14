@@ -120,7 +120,7 @@ export class GuiModel {
                         {
                             "id": "name",
                             "type": "text",
-                            "name": "GroupName",
+                            "name": "Group Name",
                             "width": 2,
                             "required": true
                         },
@@ -326,7 +326,7 @@ export class GuiModel {
                         },
                         {
                             "type": "newButton",
-                            "name": "NewGroup",
+                            "name": "New Group",
                             "icon": "fa-folder",
                             "color": "lime",
                             "form": {
@@ -353,7 +353,7 @@ export class GuiModel {
                         },
                         {
                             "type": "newButton",
-                            "name": "NewActivity",
+                            "name": "New Activity",
                             "icon": "fa-running",
                             "color": "carrot",
                             "form": {
@@ -403,6 +403,33 @@ export class GuiModel {
                             "color": "blue",
                             "search": true,
                             "url": "/friend/:friendKey/activity",
+                            "form": {
+                                "form": "AddActivityForm"
+                            }
+                        },
+                    ]
+                },
+                {
+                    "id": "activityfriendpage",
+                    "elementList": [
+                        {
+                            "type": "backbutton",
+                        },
+                        {
+                            "type": "button",
+                            "name": "Edit Activity",
+                            "icon": "fa-running",
+                            "color": "carrot",
+                            "form": {
+                                "form": "ActivityForm"
+                            }
+                        },
+                        {
+                            "type": "list",
+                            "icon": "fa-home",
+                            "color": "blue",
+                            "search": true,
+                            "url": "/activity/:activityKey/friend",
                             "form": {
                                 "form": "AddActivityForm"
                             }
