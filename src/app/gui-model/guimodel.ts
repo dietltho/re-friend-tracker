@@ -366,9 +366,7 @@ export class GuiModel {
                             "color": "carrot",
                             "search": true,
                             "url": "/activity",
-                            "form": {
-                                "form": "ActivityForm"
-                            }
+                            "page": "activityfriendpage"
                         }
                     ]
                 },
