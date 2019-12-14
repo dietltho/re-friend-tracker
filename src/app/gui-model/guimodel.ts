@@ -395,7 +395,7 @@ export class GuiModel {
                             "icon": "fa-running",
                             "color": "carrot",
                             "form": {
-                                "form": "AddActivityForm"
+                                "form": "ActivityForm"
                             }
                         },
                         {
@@ -405,7 +405,7 @@ export class GuiModel {
                             "search": true,
                             "url": "/activity",
                             "form": {
-                                "form": "AddActivityForm"
+                                "form": "ActivityForm"
                             }
                         }
                     ]
